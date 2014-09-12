@@ -1,0 +1,49 @@
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_fonts.scss";
+@import "base/_global.scss";
+@import "base/_layout.scss";
+@import "base/_nav.scss";
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    font: 16px/26px;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+	min-height: 100%;
+	background-color: #000000;
+}
+
+section {
+	//min-width: 960px;	
+}
+
+main {
+	overflow-x: hidden;
+	@include clearfix;
+	-webkit-transition: all ease-out 1s;
+    -moz-transition: all ease-out 1s;	
+    -o-transition: all ease-out 1s;
+    transition: all ease-out 1s;
+
+}
+
+.section-cc {
+	height: auto;
+	width: 100%;
+	float: left;
+	display: block;
+	@include clearfix;
+}
